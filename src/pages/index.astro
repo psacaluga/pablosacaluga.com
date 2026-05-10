@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS, AUTHOR } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} keywords={KEYWORDS} author={AUTHOR} />
+	</head>
+	<body>
+		<Header />
+		<main class="container">
+			<h1>Pablo Sacaluga</h1>
+			<!-- <h5>Design Engineer</h5> -->
+			<p>
+				I'm a product designer living in Jerez, southern Spain. I enjoy being involved in the entire product process, filling the gaps between design, technology, and business.
+			</p>
+			<p>
+				I am currently working as a Product and Strategic Designer at <a href="https://www.tacktell.com">Tacktell</a>. Previously, I worked at <a href="/cases/astara-connect/">Astara Connect</a>, <a href="/cases/emergya/">Emergya</a>, and <a href="/cases/the-big-house/">The Big House</a>.
+			</p>
+			<p>
+				This is a space where you'll find information about me and the topics and projects I've worked on or am currently involved with.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

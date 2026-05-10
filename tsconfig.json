@@ -1,0 +1,10 @@
+{
+  "extends": "./node_modules/astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*.astro", "**/*.ts"],
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "module": "Node16",
+    "moduleResolution": "node16"
+  }
+}
